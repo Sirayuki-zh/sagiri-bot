@@ -99,7 +99,7 @@ async def image_searcher(app: Ariadne, message: MessageChain, group: Group, memb
             ForwardNode(
                 senderId=config.bot_qq,
                 time=datetime.now(),
-                senderName="SAGIRI BOT",
+                senderName="Yuki",
                 messageChain=msg,
             ) for msg in msgs
         ])

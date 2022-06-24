@@ -24,7 +24,7 @@ channel.description("可以抽塔罗牌的插件，在群中发送 `塔罗牌` �
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("塔罗牌")])],
+        inline_dispatchers=[Twilight([FullMatch("/占卜")])],
         decorators=[
             FrequencyLimit.require("tarot", 1),
             Function.require(channel.module),
@@ -57,7 +57,7 @@ class Tarot(object):
         path = Path(os.getcwd()) / "statics" / "tarot" / "tarot.json"
         with open(path, 'r', encoding='utf-8') as json_file:
             data = json.load(json_file)
-        kinds = ['major', 'pentacles', 'wands', 'cups', 'swords']
+        kinds = ['major']
         cards = []
         for kind in kinds:
             cards.extend(data[kind])
