@@ -65,7 +65,7 @@ async def bt_searcher(app: Ariadne, message: MessageChain, group: Group, keyword
             ForwardNode(
                 senderId=config.bot_qq,
                 time=datetime.now(),
-                senderName="纱雾酱",
+                senderName="Yuki",
                 messageChain=MessageChain(
                     f"标题：{title}\n"
                     f"文件大小：{file_size}\n"

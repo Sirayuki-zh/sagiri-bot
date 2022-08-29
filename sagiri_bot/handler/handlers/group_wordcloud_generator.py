@@ -115,6 +115,9 @@ class GroupWordCloudGenerator:
             "www",
             ":/",
             "qq",
+            "https",
+            "com"，
+            "DY3BXc3NkbmN4Vktp",
         ]
         image_filter = "mirai:"
         result = []
